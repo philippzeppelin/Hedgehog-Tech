@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qwf-wN-tO9">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Images View Controller-->
+        <scene sceneID="adO-fe-18I">
+            <objects>
+                <collectionViewController id="Z9I-3Z-tNK" customClass="ImagesViewController" customModule="Hedgehog_Tech" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="m5f-xZ-xRB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vu1-iY-b9H">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="estimatedItemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="dG2-KB-n2P" customClass="ImagesCell" customModule="Hedgehog_Tech" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cCm-KD-AG8">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfP-ia-FY4">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="qlk-qs-iw7"/>
+                                                <constraint firstAttribute="height" constant="150" id="scF-iT-YI3"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cfP-ia-FY4" firstAttribute="leading" secondItem="cCm-KD-AG8" secondAttribute="leading" id="2v7-S6-8KD"/>
+                                        <constraint firstItem="cfP-ia-FY4" firstAttribute="top" secondItem="cCm-KD-AG8" secondAttribute="top" id="56B-aK-cyY"/>
+                                        <constraint firstAttribute="bottom" secondItem="cfP-ia-FY4" secondAttribute="bottom" id="BcH-iS-kEj"/>
+                                        <constraint firstAttribute="trailing" secondItem="cfP-ia-FY4" secondAttribute="trailing" id="DdA-lW-saQ"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="cfP-ia-FY4" id="eYH-ie-gQZ"/>
+                                    <segue destination="jRc-Z9-NIY" kind="show" id="N0b-2c-HuK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Z9I-3Z-tNK" id="JD2-Pp-cbC"/>
+                            <outlet property="delegate" destination="Z9I-3Z-tNK" id="oTb-Rt-aJu"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="ibe-Fz-XXl"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPf-zZ-EtG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738.46153846153845" y="-24.170616113744074"/>
+        </scene>
+        <!--Hedgehog Tech-->
+        <scene sceneID="KBh-wp-0HT">
+            <objects>
+                <viewController id="jRc-Z9-NIY" customClass="FullImageViewController" customModule="Hedgehog_Tech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOK-pP-GW2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-2p-g9E">
+                                <rect key="frame" x="15" y="91" width="360" height="550"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="550" id="X0q-mG-x5P"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9G-NN-DxS">
+                                <rect key="frame" x="255.66666666666663" y="710" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="1JR-5J-E5e"/>
+                                    <constraint firstAttribute="height" constant="35" id="ZMy-pJ-MnN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DK-3r-PNk">
+                                <rect key="frame" x="59.333333333333343" y="710" width="75" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="838-k3-RyZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="opU-TA-5VH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-X7-DfP">
+                                <rect key="frame" x="167.33333333333334" y="710" width="55.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Link" cornerStyle="capsule">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zMz-tU-JqF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j9G-NN-DxS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3R2-X7-DfP" secondAttribute="trailing" constant="8" symbolic="YES" id="10r-nN-hrn"/>
+                            <constraint firstItem="zMz-tU-JqF" firstAttribute="trailing" secondItem="5oU-2p-g9E" secondAttribute="trailing" constant="15" id="1lW-Hq-mkN"/>
+                            <constraint firstItem="j9G-NN-DxS" firstAttribute="top" secondItem="5oU-2p-g9E" secondAttribute="bottom" constant="69" id="KUr-3L-Efl"/>
+                            <constraint firstItem="0DK-3r-PNk" firstAttribute="leading" secondItem="zMz-tU-JqF" secondAttribute="leading" constant="59.333333333333343" id="KZS-s7-lnb"/>
+                            <constraint firstItem="5oU-2p-g9E" firstAttribute="leading" secondItem="zMz-tU-JqF" secondAttribute="leading" constant="15" id="Kj5-yN-pbB"/>
+                            <constraint firstItem="5oU-2p-g9E" firstAttribute="centerX" secondItem="hOK-pP-GW2" secondAttribute="centerX" id="SWg-dq-ByV"/>
+                            <constraint firstItem="3R2-X7-DfP" firstAttribute="top" secondItem="5oU-2p-g9E" secondAttribute="bottom" constant="69" id="dpM-ng-uAQ"/>
+                            <constraint firstItem="3R2-X7-DfP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0DK-3r-PNk" secondAttribute="trailing" constant="8" symbolic="YES" id="fXS-qm-lUl"/>
+                            <constraint firstItem="zMz-tU-JqF" firstAttribute="trailing" secondItem="j9G-NN-DxS" secondAttribute="trailing" constant="59.333333333333371" id="oHC-CO-uAS"/>
+                            <constraint firstItem="3R2-X7-DfP" firstAttribute="centerX" secondItem="hOK-pP-GW2" secondAttribute="centerX" id="reS-1K-QjC"/>
+                            <constraint firstItem="5oU-2p-g9E" firstAttribute="top" secondItem="zMz-tU-JqF" secondAttribute="top" id="y30-e7-acJ"/>
+                            <constraint firstItem="0DK-3r-PNk" firstAttribute="top" secondItem="5oU-2p-g9E" secondAttribute="bottom" constant="69" id="zdt-cB-qlQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hedgehog Tech" largeTitleDisplayMode="always" id="ZfB-1k-Lzm"/>
+                    <connections>
+                        <outlet property="fullImageView" destination="5oU-2p-g9E" id="jjS-ZR-nQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDA-sR-uB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.8461538461538" y="-24.170616113744074"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yJj-Ho-l9e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qwf-wN-tO9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mWx-UH-amA">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z9I-3Z-tNK" kind="relationship" relationship="rootViewController" id="eH9-c2-Eg4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WW-SQ-Vsd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190.76923076923077" y="-24.170616113744074"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
