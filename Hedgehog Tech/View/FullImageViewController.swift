@@ -13,7 +13,5 @@ class FullImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fullImageView.backgroundColor = .red
     }
 }

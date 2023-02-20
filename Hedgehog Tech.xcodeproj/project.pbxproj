@@ -58,11 +58,11 @@
 		E7645A5229A0091D003D7F52 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E7EEFCB1299EA46D0001CA54 /* Main.storyboard */,
 				E7EEFCAF299EA46D0001CA54 /* ImagesViewController.swift */,
 				E7EEFCBF299EA62D0001CA54 /* ImagesCell.swift */,
 				E7EEFCC1299EAC8F0001CA54 /* FullImageViewController.swift */,
 				E7645A5529A0BE14003D7F52 /* ImagesViewModel.swift */,
+				E7EEFCB1299EA46D0001CA54 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -52,53 +52,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "26E9DEA3-1837-4EE2-9247-EA13AE299574"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Hedgehog Tech/View/ImagesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "26E9DEA3-1837-4EE2-9247-EA13AE299574 - 2725b12258a7815"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Hedgehog_Tech.Images&gt;, Swift.Error&gt;) -&gt; () in Hedgehog_Tech.ImagesViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Hedgehog Tech"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/philippzeppelin/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Learning/Programming/untitled%20folder/Hedgehog%20Tech/Hedgehog%20Tech/View/ImagesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "608">
-               </Location>
-               <Location
-                  uuid = "26E9DEA3-1837-4EE2-9247-EA13AE299574 - 5abfdd063f620556"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;Hedgehog_Tech.Images&gt;, Swift.Error&gt;) -&gt; () in Hedgehog_Tech.ImagesViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Hedgehog Tech"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/philippzeppelin/Library/Mobile%20Documents/com~apple~CloudDocs/Development/Learning/Programming/untitled%20folder/Hedgehog%20Tech/Hedgehog%20Tech/View/ImagesViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
